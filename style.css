@@ -1,0 +1,92 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121212; /* dark theme background */
+  color: #e0e0e0; /* light gray text */
+  min-height: 100vh;
+}
+
+/* Main heading (separate at very top) */
+header {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #f5f5f5; /* aligned with dark background */
+  font-weight: bold;
+}
+
+/* Main container (card style) */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 8vh; /* about one-third from top */
+  padding: 2rem;
+  background-color: #1a1a1a; /* slightly lighter than body */
+  border: 1px solid #333; /* thin border */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6); /* subtle shadow */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Input box */
+input[type="text"] {
+  padding: 0.8rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #222;
+  color: #f0f0f0;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #888;
+  background-color: #2a2a2a;
+}
+
+/* Button */
+button {
+  padding: 0.9rem;
+  background-color: #2d2d2d;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #f0f0f0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #3a3a3a;
+  transform: translateY(-2px);
+}
+
+/* Result box */
+.result {
+  padding: 1rem;
+  background-color: #181818;
+  border: 1px solid #333;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
+
+/* Make visible when result is displayed */
+.result.show {
+  opacity: 1;
+  visibility: visible;
+}
