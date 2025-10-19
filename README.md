@@ -6,7 +6,7 @@ A simple, interactive web-based tool to check whether any given input is a palin
 
 ## 🚀 Live Demo
 
-Try it instantly: [github.com/Abdulqadir-B/Palindrome-Checker](https://github.com/Abdulqadir-B/Palindrome-Checker)
+Try it instantly: [github.com/Abdulqadir-B/Palindrome-Checker](https://abdulqadir-b.github.io/Palindrome-Checker/)
 
 ---
 
@@ -22,7 +22,7 @@ Try it instantly: [github.com/Abdulqadir-B/Palindrome-Checker](https://github.co
 
 ## 🛠️ How It Works
 
-1. Open the [live demo](https://github.com/Abdulqadir-B/Palindrome-Checker) in your browser.
+1. Open the [live demo](https://abdulqadir-b.github.io/Palindrome-Checker/) in your browser.
 2. Type any text, word, or number.
 3. Instantly see if it’s a palindrome!
 
