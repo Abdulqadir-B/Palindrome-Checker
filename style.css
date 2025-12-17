@@ -9,7 +9,8 @@
 body {
   background-color: #121212; /* dark theme background */
   color: #e0e0e0; /* light gray text */
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Main heading (separate at very top) */
@@ -29,7 +30,8 @@ header h1 {
 .container {
   max-width: 400px;
   margin: 0 auto;
-  margin-top: 8vh; /* about one-third from top */
+  margin-top: 6vh;
+  margin-bottom: 2rem;
   padding: 2rem;
   background-color: #1a1a1a; /* slightly lighter than body */
   border: 1px solid #333; /* thin border */
@@ -45,7 +47,7 @@ input[type="text"] {
   padding: 0.8rem;
   border: 1px solid #444;
   border-radius: 8px;
-  background-color: #222;
+  background-color: #222 !important;
   color: #f0f0f0;
   font-size: 1rem;
   outline: none;
@@ -54,7 +56,16 @@ input[type="text"] {
 
 input[type="text"]:focus {
   border-color: #888;
-  background-color: #2a2a2a;
+  background-color: #2a2a2a !important;
+}
+
+/* Prevent autofill white background */
+input[type="text"]:-webkit-autofill,
+input[type="text"]:-webkit-autofill:hover,
+input[type="text"]:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #222 inset !important;
+  -webkit-text-fill-color: #f0f0f0 !important;
+  border: 1px solid #444 !important;
 }
 
 /* Button group */
